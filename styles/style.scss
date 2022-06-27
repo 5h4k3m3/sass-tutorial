@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$mainColor: rgb(171, 99, 171);
+$leftColor: rgb(233, 206, 156);
+$rightColor: rgb(113, 191, 151);
+$textColor: #eee;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: aquamarine;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $mainColor;
+}
+
+.content {
+  display: flex;
+
+  .leftContent {
+    width: 650px;
+    height: 470px;
+    background-color: $leftColor;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: relative;
+
+    h2 {
+      color: $textColor;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      font-size: 4rem;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        font-size: 4.5rem;
+        color: $mainColor;
+      }
+    }
+  }
+
+  .rightContent {
+    width: 300px;
+    position: relative;
+
+    p {
+      position: absolute;
+      top: 120px;
+      height: 400px;
+      border-radius: 10px;
+      background-color: $rightColor;
+      padding: 15px;
+      color: $textColor;
+    }
+
+    button {
+      position: absolute;
+      top: 200px;
+      left: 30px;
+      padding: 13px;
+      border: none;
+      border-radius: 3px;
+      background-color: $leftColor;
+      color: $textColor;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        font-size: 1.5rem;
+        color: $mainColor;
+      }
+    }
+  }
+}
