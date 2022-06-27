@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-$mainColor: rgb(171, 99, 171);
-$leftColor: rgb(233, 206, 156);
-$rightColor: rgb(113, 191, 151);
-$textColor: #eee;
+@import "./variables";
 
 * {
   margin: 0;
